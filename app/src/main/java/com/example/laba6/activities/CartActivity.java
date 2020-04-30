@@ -39,6 +39,9 @@ public class CartActivity extends AppCompatActivity {
         buy.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Toast toast = Toast.makeText(getApplicationContext(),
+                        "Покупка совершена", Toast.LENGTH_SHORT);
+                toast.show();
                 Intent intent=new Intent(CartActivity.this, MainActivity.class);
                 db.deleteAll();
                 startActivity(intent);
