@@ -37,6 +37,7 @@ public class AddProductActivity extends AppCompatActivity {
                 db.addProduct(new Model(nameofProduct, discofProduct, countofProduct, priceofProduct));
                 Intent intent = new Intent(AddProductActivity.this, MainActivity.class);
                 startActivity(intent);
+                finish();
             }
         });
 
